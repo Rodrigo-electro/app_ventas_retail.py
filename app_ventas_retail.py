@@ -316,7 +316,7 @@ print("📊 Métricas calculadas:")
 # Convertir las métricas en un DataFrame para una mejor visualización
 metricas_df = pd.DataFrame(list(metricas_detalladas.items()), columns=['Métrica', 'Valor'])
 # con python en google colab funciona como display, en stream se cambia display por "st.dataframe"
-display(metricas_df)
+st.dataframe(metricas_df)
 
 """### 💡 Nota:
 MAPE(Mean Absolute Percentage Error) es especialmente útil para comunicar error a audiencias de negocio porque está en porcentaje.
