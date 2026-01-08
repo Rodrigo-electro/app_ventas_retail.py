@@ -86,6 +86,7 @@ for tienda_id in tiendas:
 # pip install plotly pandas scikit-learn
 
 # Importa las librerías
+import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
