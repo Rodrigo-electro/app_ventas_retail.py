@@ -165,6 +165,8 @@ def preprocesar_datos(df):
   """
   print(" 🔄 Iniciando preprocesamiento...")
   # Crear features temporales
+    #LINEA AGREGADA
+  df[CONFIG['date_column']] = pd.to_datetime(df[CONFIG['date_column']], errors='coerce')
   df['año'] = df[CONFIG['date_column']].dt.year
   df['mes'] = df[CONFIG['date_column']].dt.month
   df['semana'] = df[CONFIG['date_column']].dt.isocalendar().week
